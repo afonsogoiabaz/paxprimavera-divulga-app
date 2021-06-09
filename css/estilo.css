@@ -1,0 +1,322 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+  --branco: rgba(255,255,255,0.95);
+  --preto: rgba(0,0,0,0.9);
+  --verdepax: #006b33;
+  --padding: 0.5rem;
+  --fmedia: 1.2rem;
+  --fsmall: 0.9rem;
+  --fbig: 1.6rem;
+}
+
+html, 
+body{
+  height: 100%;
+}
+
+header{
+  padding: var(--padding);
+  box-shadow: 0px 1px 6px rgba(0,0,0,0.5);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  background: var(--branco);
+}
+
+header img{
+  max-height: 35px;
+  margin: 5px;
+}
+
+section{
+  padding: var(--padding);
+}
+
+.convert{
+  
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.convert{
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.convert-text{
+  position: relative;
+  margin-top: 50px;
+}
+
+.convert-text p{
+  width: 65%;
+  margin-top: 5px;
+  font-size: var(--fmedia);
+  font-weight: 100;
+  text-align: left;
+  line-height: 25px;
+}
+
+.convert-text b{
+  font-size: var(--fbig);
+  font-weight: 700;
+  color: var(--verdepax);
+}
+
+.container-app{
+  position: absolute;
+  right: 0;
+  top: 75px;
+}
+
+.container-app img{
+  width: 95%;
+}
+
+.convert-buttons span{
+  display: block;
+  margin-top: 40px;
+  width: 60%;
+  font-size: 0.8rem;
+}
+
+.convert-buttons span b {
+  font-size: unset;
+  font-weight: 100;
+}
+
+.convert-button{
+  text-decoration: none;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin-top: 15px;
+  padding: var(--padding);
+  border-radius: 6px;
+  box-shadow: 1px 2px 5px rgba(0,0,0,0.7);
+  outline: none;
+
+  animation: pulse 1.3s infinite ease;
+}
+
+.convert-button span{
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--preto);
+}
+
+.convert-button i{
+  margin-right: 15px;
+  font-size: 25px;
+  color: var(--preto);
+}
+
+.text-button{
+  width: 100%;
+}
+
+.text-button span{
+  width: 100%;
+}
+
+.text-button i{
+  width: 100%;
+  font-size: 0.75rem;
+}
+
+.android{
+  background: var(--verdepax);
+}
+
+.android span,
+.android i{
+  color: var(--branco);
+  text-shadow: 0px 1px 5px rgba(0,0,0,0.6);
+}
+
+@keyframes pulse {
+
+  0%{
+
+    transform: scale(1);
+  }
+
+  50%{
+    transform: scale(1.03);
+  }
+
+  100%{
+    transform: scale(1);
+  }
+}
+
+.novidades,
+.trabalhe-solicite,
+.solicite-plano{
+  margin-top: 40px;
+}
+
+.title-secion h2{
+  font-weight: 400;
+}
+
+.novidades-app{
+  margin-top: 20px;
+}
+
+.novidades-app img{
+  width: 100%;
+}
+
+.text-novidades,
+.text-plano,
+.text-agendamento,
+.title-secion h2{
+  width: 90%;
+  margin: 0 auto;
+  font-size: var(--fbig);
+}
+
+.text-novidades p,
+.text-plano p,
+.text-agendamento p,
+.text-trabalhe-solicite p{
+  margin-top: 20px;
+  font-size: 1.1rem;
+  line-height: 26px;
+}
+
+.text-novidades p b,
+.text-plano p b,
+.text-agendamento p b{
+  color: var(--verdepax);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.trabalhe-solicite{
+  background: var(--verdepax);
+  padding-bottom: 20px;
+}
+
+.section-90{
+  width: 95%;
+  margin: 0 auto;
+}
+
+.trabalhe-solicite .title-secion h2{
+  width: 100%;
+  color: var(--branco);
+  margin-top: 20px;
+}
+
+.text-trabalhe-solicite ul{
+  margin-top: 20px;
+}
+
+.text-trabalhe-solicite ul li{
+  line-height: 26px;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: var(--branco);
+}
+
+.solicite-plano-img{
+  width: 50%;
+}
+
+.solicite-plano-img img{
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+  object-fit: cover;
+  object-position: 108% 0;
+}
+
+.solicite-plano .title-secion{
+  margin-bottom: 10px;
+}
+
+.flex-div{
+  display: flex;
+  width: 100%;
+}
+
+.flex-div .convert-buttons{
+  width: 50%;
+}
+
+.flex-div .convert-buttons span{
+  width: 100%;
+  margin-top: 20px;
+}
+
+.flex-div .convert-button{
+  width: 90%;
+  align-items: center;
+}
+
+.flex-div .convert-button span{
+  margin: 0;
+}
+
+.text-solicite{
+  margin-top: 50px;
+}
+
+.text-solicite p{
+  line-height: 26px;
+  font-size: var(--fsmall);
+  width: 95%;
+  margin-bottom: 0;
+}
+
+.text-solicite p b{
+  color: var(--verdepax);
+  font-weight: 900;
+}
+
+.agendamento{
+  margin-top: 40px;
+}
+
+.agendamento .title-secion h2 b{
+  color: var(--verdepax);
+}
+
+.agenda-img{
+  width: 95%;
+  margin: 0 auto;
+}
+
+.agenda-img img{
+  width: 100%;
+}
+
+footer{
+  padding: 1.5rem;
+  text-align: center;
+  background: rgb(230, 230, 230);
+  border-top: solid 3px #cecece;
+}
+
+
+footer span{
+  font-size: var(--fsmall);
+}
+
+footer b{
+  color: var(--verdepax);
+}
